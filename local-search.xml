@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>Compute Shader</title>
+    <link href="/2024/07/12/Compute%20Shader/"/>
+    <url>/2024/07/12/Compute%20Shader/</url>
+    
+    <content type="html"><![CDATA[<p>计算着色器是运行在<code>GPU</code>正常渲染管线之外的着色器程序，可用于大规模并行 GPGPU（General Purpose GPU）算法，或加速部分游戏渲染。</p><p><img src="/images/20240712_Concept.jpg" alt="Concept"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>图形</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Shader</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hexo Quick Start</title>
     <link href="/2024/07/12/Hexo%20Quick%20Start/"/>
     <url>/2024/07/12/Hexo%20Quick%20Start/</url>
