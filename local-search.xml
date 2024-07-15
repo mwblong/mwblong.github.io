@@ -11,6 +11,12 @@
     <content type="html"><![CDATA[<h2 id="Setup"><a href="#Setup" class="headerlink" title="Setup"></a>Setup</h2><p><code>npm install --save hexo-admin</code></p><h2 id="Start"><a href="#Start" class="headerlink" title="Start"></a>Start</h2><p><code>hexo s</code></p><p><a href="http://localhost:4000/admin/">http://localhost:4000/admin/</a></p>]]></content>
     
     
+    <categories>
+      
+      <category>Writing skills</category>
+      
+    </categories>
+    
     
     <tags>
       
