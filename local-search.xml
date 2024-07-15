@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>Hexo admin</title>
+    <link href="/2024/07/15/Hexo-admin/"/>
+    <url>/2024/07/15/Hexo-admin/</url>
+    
+    <content type="html"><![CDATA[<h2 id="Setup"><a href="#Setup" class="headerlink" title="Setup"></a>Setup</h2><p><code>npm install --save hexo-admin</code></p><h2 id="Start"><a href="#Start" class="headerlink" title="Start"></a>Start</h2><p><code>hexo s</code></p><p><a href="http://localhost:4000/admin/">http://localhost:4000/admin/</a></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>LaTex Setup</title>
     <link href="/2024/07/15/LaTex-Setup/"/>
     <url>/2024/07/15/LaTex-Setup/</url>
