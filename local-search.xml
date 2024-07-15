@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>LaTex Setup</title>
+    <link href="/2024/07/15/LaTex-Setup/"/>
+    <url>/2024/07/15/LaTex-Setup/</url>
+    
+    <content type="html"><![CDATA[<h2 id="texlive-下载"><a href="#texlive-下载" class="headerlink" title="texlive 下载"></a>texlive 下载</h2><p>texlive.iso:<a href="https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/">https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/</a></p><h2 id="texstudio-下载"><a href="#texstudio-下载" class="headerlink" title="texstudio 下载"></a>texstudio 下载</h2><p>texstudio-4.8.1-win-qt6.exe<a href="https://mirrors.tuna.tsinghua.edu.cn/github-release/texstudio-org/texstudio/LatestRelease/">https://mirrors.tuna.tsinghua.edu.cn/github-release/texstudio-org/texstudio/LatestRelease/</a></p><h2 id="测试-texlive"><a href="#测试-texlive" class="headerlink" title="测试 texlive"></a>测试 texlive</h2><p><code>latex -v</code></p><h2 id="测试-texstudio"><a href="#测试-texstudio" class="headerlink" title="测试 texstudio"></a>测试 texstudio</h2><p><code>\usepackage[ruled,linesnumbered]&#123;algorithm2e&#125;</code></p><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs latex"><span class="hljs-keyword">\begin</span>&#123;algorithm&#125;[t]<br><span class="hljs-keyword">\caption</span>&#123;Event Detection&#125;<br><span class="hljs-keyword">\label</span>&#123;algo:event&#125;<br><span class="hljs-keyword">\LinesNumbered</span><br><span class="hljs-keyword">\KwIn</span>&#123;FFT Bins <span class="hljs-built_in">$</span>B<span class="hljs-built_in">_</span>&#123;1&#125;, B<span class="hljs-built_in">_</span>&#123;2&#125;, B<span class="hljs-built_in">_</span>&#123;3&#125;, ..., B<span class="hljs-built_in">_</span>&#123;n&#125;<span class="hljs-built_in">$</span>&#125;<br><span class="hljs-keyword">\KwOut</span>&#123;Event start point <span class="hljs-built_in">$</span>S<span class="hljs-built_in">$</span>, end point <span class="hljs-built_in">$</span>E<span class="hljs-built_in">$</span>&#125;<br><span class="hljs-keyword">\For</span>&#123;i=1:n&#125;&#123;<br><span class="hljs-keyword">\eIf</span>&#123;max(<span class="hljs-built_in">$</span>B<span class="hljs-built_in">_</span>&#123;i&#125;<span class="hljs-built_in">$</span>) : max(<span class="hljs-built_in">$</span>B<span class="hljs-built_in">_</span>&#123;(i+4)&#125;<span class="hljs-built_in">$</span>)<span class="hljs-built_in">$</span>&gt;<span class="hljs-built_in">$</span>-80&#125;<br>&#123;<br><span class="hljs-built_in">$</span>S<span class="hljs-built_in">$</span>=i; <span class="hljs-keyword">\tcp</span>*&#123;Start Point&#125;<br><span class="hljs-keyword">\For</span>&#123;j=S:n&#125;<br>&#123;<br><span class="hljs-keyword">\eIf</span>&#123;max(<span class="hljs-built_in">$</span>B<span class="hljs-built_in">_</span>&#123;j&#125;<span class="hljs-built_in">$</span>) : max(<span class="hljs-built_in">$</span>B<span class="hljs-built_in">_</span>&#123;(j+4)&#125;<span class="hljs-built_in">$</span>)<span class="hljs-built_in">$</span>&lt;<span class="hljs-built_in">$</span>-100&#125;<br>&#123;<br><span class="hljs-built_in">$</span>E<span class="hljs-built_in">$</span>=j; <span class="hljs-keyword">\tcp</span>*&#123;End Point&#125;<br>Return [<span class="hljs-built_in">$</span>S,E<span class="hljs-built_in">$</span>];<br>&#125;<br>&#123;<br>j++;<br>&#125;<br>&#125;<br>&#125;<br>&#123;<br>i++;<br>&#125;<br>&#125;<br><span class="hljs-keyword">\end</span>&#123;algorithm&#125;<br></code></pre></td></tr></table></figure><p><img src="/images/Latex.png" alt="Latex"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Writing skills</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>LaTex</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Compute Shader</title>
     <link href="/2024/07/12/Compute%20Shader/"/>
     <url>/2024/07/12/Compute%20Shader/</url>
