@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>OpenMVS</title>
+    <link href="/2024/10/30/OpenMVS/"/>
+    <url>/2024/10/30/OpenMVS/</url>
+    
+    <content type="html"><![CDATA[<h1 id="OpenMVS"><a href="#OpenMVS" class="headerlink" title="OpenMVS"></a>OpenMVS</h1><p>open Multi-View Stereo reconstruction library 开源多视图立体重建库</p><p><img src="/images/related_lib.png" alt="相关三维重建的库"></p><p>链接地址: <a href="https://github.com/cdcseacave/openMVS">https://github.com/cdcseacave/openMVS</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>cesium demo</title>
     <link href="/2024/10/30/test/"/>
     <url>/2024/10/30/test/</url>
