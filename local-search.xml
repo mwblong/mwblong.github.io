@@ -4,6 +4,58 @@
   
   
   <entry>
+    <title>cesium demo</title>
+    <link href="/2024/10/30/test/"/>
+    <url>/2024/10/30/test/</url>
+    
+    <content type="html"><![CDATA[<p>测试 cesium demo</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>demo</category>
+      
+      <category>cesium</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>cesium</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>高精度DEM下载</title>
+    <link href="/2024/10/30/%E9%AB%98%E7%B2%BE%E5%BA%A6DEM%E4%B8%8B%E8%BD%BD/"/>
+    <url>/2024/10/30/%E9%AB%98%E7%B2%BE%E5%BA%A6DEM%E4%B8%8B%E8%BD%BD/</url>
+    
+    <content type="html"><![CDATA[<p>本文介绍从NASA阿拉斯加卫星设备处网站下载高精度DEM数据，下载的数据精度是12.5米分辨率。</p><p>目前国内大部分可以下载的dem数据都是30米或90米分辨率的，对于更高精度的数据要不就是需要付费下载，要不就是涉密数据无法获取。</p><p>下载地址：<a href="https://vertex.daac.asf.alaska.edu/#">https://vertex.daac.asf.alaska.edu/# </a></p><p>ASF（Alaska Satellite Facility） DAAC是美国国家航空航天局阿拉斯加卫星设备处用来存放数据的一个网站接口，具有Sentinel-1、ALOS、RADASAT、SEASAT等雷达遥感数据。</p><ol><li><p>如果没有账号，首先需要进行注册（注册过程不详细描述）</p></li><li><p>使用注册好的账号登录</p></li><li><p>选择需要下载的区域</p></li></ol><p>Search Type选择：Geographic；Dataset选择：ALOS PALSAR</p><p>下载地形dem数据</p><p>在地图上点击选择需要下载的格网，在右侧列表中找到Hi-Res Terrain Corrected进行下载：</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>GIS</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>DEM</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>cgal obb example</title>
     <link href="/2024/07/17/cgal-obb-example/"/>
     <url>/2024/07/17/cgal-obb-example/</url>
