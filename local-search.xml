@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>开源周记#1: 耳切法 Earcut</title>
+    <link href="/2025/01/02/%E5%BC%80%E6%BA%90%E5%91%A8%E8%AE%B0-1-%E8%80%B3%E5%88%87%E6%B3%95/"/>
+    <url>/2025/01/02/%E5%BC%80%E6%BA%90%E5%91%A8%E8%AE%B0-1-%E8%80%B3%E5%88%87%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Earcut"><a href="#Earcut" class="headerlink" title="Earcut"></a>Earcut</h1><p>一个快速的、仅头文件的多边形三角剖分库，<a href="https://github.com/mapbox/earcut#earcut">earcut.js</a>版 的 C++ 封装<br><a href="https://github.com/mapbox/earcut.hpp">earcut.hpp</a>。</p><p>该库实现了一种改进的耳切算法，通过 z 序曲线哈希进行优化，并扩展到可以处理孔洞、扭曲多边形、退化情况和自相交问题，但其处理方式并不能保证三角剖分的正确性，但对于像地理形状这样的实际数据，总是试图产生可接受的结果。</p><h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;earcut.hpp&gt;</span></span><br><span class="hljs-comment">// 使用的坐标类型</span><br><span class="hljs-keyword">using</span> coord = <span class="hljs-type">double</span>;<br><span class="hljs-comment">// 索引类型，默认为uint32_t</span><br><span class="hljs-keyword">using</span> n = <span class="hljs-type">uint32_t</span>;<br><span class="hljs-comment">// 定义点类型</span><br><span class="hljs-keyword">using</span> point = std::array&lt;coord, <span class="hljs-number">2</span>&gt;;<br>std::vector&lt; std::vector&lt; point&gt; &gt; polygon;<br><span class="hljs-comment">// 填充多边形结构，任何环绕顺序都有效</span><br><span class="hljs-comment">// 第一条折线定义主多边形</span><br>polygon.<span class="hljs-built_in">push_back</span>( &#123; &#123; <span class="hljs-number">100</span>, <span class="hljs-number">0</span> &#125;, &#123; <span class="hljs-number">100</span>, <span class="hljs-number">100</span> &#125;, &#123; <span class="hljs-number">0</span>, <span class="hljs-number">100</span> &#125;, &#123; <span class="hljs-number">0</span>, <span class="hljs-number">0</span> &#125; &#125; );<br><span class="hljs-comment">// 后续折线定义孔洞</span><br>polygon.<span class="hljs-built_in">push_back</span>( &#123; &#123; <span class="hljs-number">75</span>, <span class="hljs-number">25</span> &#125;, &#123; <span class="hljs-number">75</span>, <span class="hljs-number">75</span> &#125;, &#123; <span class="hljs-number">25</span>, <span class="hljs-number">75</span> &#125;, &#123; <span class="hljs-number">25</span>, <span class="hljs-number">25</span> &#125; &#125; );<br><span class="hljs-comment">// 运行三角剖分</span><br>std::vector&lt; n&gt; indices = mapbox::<span class="hljs-built_in">earcut</span>&lt; n&gt; ( polygon );<br></code></pre></td></tr></table></figure><h2 id="功能特点"><a href="#功能特点" class="headerlink" title="功能特点"></a>功能特点</h2><ul><li><p>适用多边形类型广泛：可以对具有任何环绕顺序的简单平面多边形进行三角剖分，包括带有孔洞的多边形。甚至对于非简单多边形，也能返回一个可靠的、可接受的解决方案。</p></li><li><p>平面限制及处理方法：该库是基于 2D 平面进行工作的。如果遇到三维或更多维度的数据，使用者可以在进行三角剖分之前将其投影到 2D 平面上，或者选择使用更适合的库来完成任务，例如 CGAL。</p></li></ul><h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><ul><li>地理信息系统（GIS）：可用于处理地图中的多边形数据，如将复杂的地理区域划分为三角形网格，以便进行地形渲染、空间分析等操作。</li><li>计算机图形学：在 3D 建模、游戏开发等领域，可将二维的多边形模型进行三角剖分，为后续的渲染和物理模拟等提供基础数据结构。</li><li>有限元分析：将复杂的几何形状划分为简单的三角形单元，以便进行数值计算和模拟，如结构力学分析、热传导分析等。</li></ul><h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p><img src="/images/earcut.png" alt="earcut"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>opensource</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>earcut</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>OpenMVS</title>
     <link href="/2024/10/30/OpenMVS/"/>
     <url>/2024/10/30/OpenMVS/</url>
